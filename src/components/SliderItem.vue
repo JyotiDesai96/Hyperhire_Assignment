@@ -1,6 +1,5 @@
 <template>
   <div class="row" style="background-color: white !important">
-    <q-space></q-space>
     <div class="col-1"></div>
     <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
       <q-item class="logo-padding">
@@ -25,21 +24,43 @@
       >
       <q-item class="description_content">ⓒ 2023 Hyperhire</q-item>
     </div>
-    <div class="col-2 col-md-2 col-sm-12 col-xs-12 q-mt-lg">
-      <q-space></q-space>
-      <q-item class="description_content">사업자등록번호 CIN</q-item>
-      <q-item class="description_content">427-86-01187</q-item>
-      <q-item class="description_content">U74110DL2016PTC290812</q-item>
+    <div class="col-8 col-md-8 col-sm-12 col-xs-12 q-mt-lg">
+      <div class="row">
+        <div class="col-3">
+          <q-chip icon="event"></q-chip>
+          <q-item class="description_content">해외 개발자 원격 채용</q-item>
+        </div>
+        <div class="col-3">
+          <q-chip icon="alarm"></q-chip>
+          <q-item class="description_content">외국인 원격 채용 (비개발)</q-item>
+        </div>
+        <div class="col-3">
+          <q-chip icon="bookmark"></q-chip>
+          <q-item class="description_content">한국어 가능 외국인 채용</q-item>
+        </div>
+        <div class="col-3">
+          <q-chip icon="directions"></q-chip>
+          <q-item class="description_content">해외 개발자 활용 서비스</q-item>
+        </div>
+      </div>
+      <q-space />
+      <div class="row">
+        <div class="col-3 col-md-3 col-sm-12 col-xs-12 q-mt-lg">
+          <q-space></q-space>
+          <q-item class="description_content">사업자등록번호 CIN</q-item>
+          <q-item class="description_content">427-86-01187</q-item>
+          <q-item class="description_content">U74110DL2016PTC290812</q-item>
+        </div>
+        <div class="col-6 col-md-6 col-sm-12 col-xs-12 q-mt-lg">
+          <q-space></q-space>
+          <q-item class="description_content">ADDRESS</q-item>
+          <q-item class="description_content"
+            >D-138, Street number 11, Jagjeet Nagar, North East Delhi, New
+            Delhi, 110053 India</q-item
+          >
+        </div>
+      </div>
     </div>
-    <div class="col-4 col-md-4 col-sm-12 col-xs-12 q-mt-lg">
-      <q-space></q-space>
-      <q-item class="description_content">ADDRESS</q-item>
-      <q-item class="description_content"
-        >D-138, Street number 11, Jagjeet Nagar, North East Delhi, New Delhi,
-        110053 India</q-item
-      >
-    </div>
-    <div class="col-2 q-mt-lg"></div>
   </div>
 </template>
 

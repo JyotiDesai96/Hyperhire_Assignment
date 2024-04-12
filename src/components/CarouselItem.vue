@@ -110,8 +110,8 @@
           </q-carousel-slide>
         </q-carousel>
       </div>
-      <!-- <div
-        v-if="(isCheckbox = !isCheckbox)"
+      <div
+        v-if="!isMobile()"
         class="isCheckbox q-pa-md main col-lg-5 col-md-5 col-sm-12 col-xs-12"
       >
         <div class="q-gutter-sm">
@@ -128,25 +128,25 @@
           />
           <q-checkbox v-model="cyan" label="tablet review" color="indigo-10" />
         </div>
-      </div> -->
+      </div>
       <!-- <div class="col-1"></div> -->
     </div>
     <div class="row contentdata">
       <div class="col-1"></div>
       <div class="col-lg-10 col-md-10 col-sm-12 col-xs-12">
-        <q-btn class="btn_list" flat size="md" style="color: white">
+        <q-btn class="btn_list" flat size="md">
           <q-btn square class="btn_sub" icon="shopping_cart" />
           overseas marketing
         </q-btn>
-        <q-btn class="btn_list" flat size="md" style="color: white">
+        <q-btn class="btn_list" flat size="md">
           <q-btn square class="btn_sub" icon="directions" />
           public
         </q-btn>
-        <q-btn class="btn_list" flat size="md" style="color: white">
+        <q-btn class="btn_list" flat size="md">
           <q-btn square class="btn_sub" icon="my_location" />
           overseas sales
         </q-btn>
-        <q-btn class="btn_list" flat size="md" style="color: white">
+        <q-btn class="btn_list" flat size="md">
           <q-btn square class="btn_sub" icon="shopping_cart" />
           overseas marketing
         </q-btn>
@@ -301,8 +301,13 @@ export default {
     };
   },
   methods: {
-    oncarousel(user) {
-      console.log(user);
+    isMobile() {
+      if (screen.width > 760) {
+        console.log(screen.width);
+        return true;
+      } else {
+        return false;
+      }
     },
   },
 };
@@ -393,12 +398,16 @@ q-message-text-content--sent {
 .description_content {
   color: white !important;
   line-height: 18px !important;
+  font-weight: 500 !important;
 }
 .btn_list {
   background-color: #ffffff35;
   margin: 10px !important;
   border-radius: 5px !important;
+  color: white;
+  padding: 0px 10px 0px 4px !important;
 }
+
 .btn_sub {
   margin: 8px 12px 8px 6px !important;
   padding: 8px 10px 8px 10px;

@@ -88,6 +88,7 @@ export default defineComponent({
 }
 .btn-dropdown {
   text-transform: capitalize !important;
+  letter-spacing: 1px !important;
 }
 .btn_inquiry {
   text-transform: capitalize !important;
